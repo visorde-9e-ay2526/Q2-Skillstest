@@ -1,0 +1,12 @@
+body {
+    font-family:'Gill Sans';
+    background-image: url(https://obmontessori.orangeapps.ph/landing/obmontessori/images/Greenhills%20Facade.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-text {
+    text-align: center;
+    padding: 20px;
+}

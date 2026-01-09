@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Enroll Now</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-bg-light">
+        <div class="container-fluid bg-light">
+            <a class="navbar-brand" href="https://obmontessori.edu.ph/">
+                <img src="OBMC 60 Icon_Circle.png" alt="logo" height="50px" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">Enroll Now</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container bg-light bg-opacity-75 rounded">
+        <div class="main-text">
+            <h3>O.B. Montessori Center</h3>
+            <h1>Student Enrollment Form</h1>
+        </div>
+        <hr>
+        <p>Fill out the form to enroll for the next academic year.</p>
+        <form class="vertical-layout">
+            <div class="row">
+                <h3>Student Information</h3><br>
+                <div class="col-md-6 mb-3">
+                    <label for="fname" class="form-label">First Name</label><br>
+                    <input type="text" placeholder="First Name" class="form-control">
+                    
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lname" class="form-label">Last Name</label><br>
+                    <input type="text" placeholder="Last Name" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="bday" class="form-label">Date of Birth</label><br>
+                    <input type="text" placeholder="dd/mm/yyyy" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="gender" class="form-label">Gender</label><br>
+                    <select id="gender" name="gender" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="level" class="form-label">Grade Level</label><br>
+                    <select id="level" name="level" class="form-control">
+                        <option value="jc">Junior Casa</option>
+                        <option value="jac">Junior Advanced Casa</option>
+                        <option value="ac">Advanced Casa</option>
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                        <option value="grade4">Grade 4</option>
+                        <option value="grade5">Grade 5</option>
+                        <option value="grade6">Grade 6</option>
+                        <option value="grade7">Grade 7</option>
+                        <option value="grade8">Grade 8</option>
+                        <option value="grade9">Grade 9</option>
+                        <option value="grade10">Grade 10</option>
+                        <option value="grade11">Grade 11</option>
+                        <option value="grade12">Grade 12</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Contact Details</h3>
+                <div class="col-md-12 mb-3">
+                    <label for="email" class="form-label">Email Address</label><br>
+                    <input type="text" placeholder="example@gmail.com" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="contact-number" class="form-label">Contact Number</label>
+                    <input type="text" placeholder="0912-345-6789" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <h3>Other Information</h3>
+                <div class="col-md-12 mb-3">
+                    <p>Mode of Learning</p>
+                    <input type="radio" id="face-to-face" name="learning-mode" value="Face-to-Face">
+                    <label for="face-to-face">Face-to-Face</label><br>
+                    <input type="radio" id="online" name="learning-mode" value="Online">
+                    <label for="online">Online</label><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <input type="checkbox" id="confirm" name="confirmation" value="Confirm">
+                    <label for="confirm">I confirm that the information provided is true and complete.</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3" style="align-items: center;">
+                    <input type="submit" class="form-control bg-primary" style="border-radius: 3px;">
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-light text-center">
+        <div class="text-center p-3">
+            &copy; 2026 Student Enrollment System | Cedric Visorde 9-E
+        </div>
+    </footer>
+</body>
+</html>
